@@ -34,10 +34,10 @@ async def restart(client, m: Message):
     await loli.edit("7")
     await loli.edit("8")
     await loli.edit("9")
-    await loli.edit("**✅ تم تحديث سورس ميوزك توب @OYOYV")
+    await loli.edit("**✅ تم تحديث سورس ميوزك توب @U0QQQ")
     os.execl(sys.executable, sys.executable, *sys.argv)
     quit()
-@Client.on_message(filters.user(SUDO_USERS) & filters.command(["اوامري"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.user(SUDO_USERS) & filters.command(["اوامر"], prefixes=f"{HNDLR}"))
 @authorized_users_only
 async def help(client, m: Message):
     await m.delete()
@@ -65,15 +65,15 @@ async def help(client, m: Message):
 ↲🎷 | حول السورس ⇦  [ {HNDLR}السورس ]
 ↲🎹 | لأعاده تشغيل التنصيب أرسل ⇦  [ {HNDLR}تحديث ]
 ———————×———————
-المطور 🇮🇶 : @GTT_G 
-القناة 🇮🇶 :  @OYOYV . @Sl3SI"""
+المطور 🇮🇶 : @GGIKG
+القناة 🇮🇶 :  @U0QQQ"""
     await m.reply(TOPAC)
 @Client.on_message(filters.command(["الريبو"], prefixes=f"{HNDLR}"))
 async def repo(client, m: Message):
     await m.delete()
     REPO = f"""
 <b>👋  اهلا {m.from_user.mention}!
-🎶 هذا ميوزك توب @OYOYV
-- للمطور : @GTT_G
+🎶 هذا ميوزك توب @U0QQQ
+- للمطور : @GGIKG
 """
     await m.reply(REPO, disable_web_page_preview=True)
